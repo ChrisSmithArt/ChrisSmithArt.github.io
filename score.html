@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adventure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='score.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <header>
+      <h1>Adventure 01</h1>
+      <h2>Escape from <i>Deepwoods Vault</i></h2>
+   </header>
+    <nav id="nav">
+      <ul>
+         <li><a class="navLink" id="room1" href="index.html">Introduction</a></li>
+         <li><a class="navLink" id="room2" href="ccform.html">Character Creation</a></li>
+         <li><a class="navLink" id="room3" href="adventure.html">Adventure</a></li>
+         <li><a class="navLink" id="room4" href="score.html">Score</a></li>
+      </ul>
+   </nav>
+    <main>
+      <section id="mainContainer">
+         <h2>Player Results</h2>
+         <article>This is the score page</article>
+               <section id="secondaryContainer">
+                  <img id="map" src="map00_33x72.png" alt="dungeon map">
+                  <section>
+                     <h2> Player Name: <span id="playerName">Name</span></h2>
+                     <ul class="scoreList">
+                        <li><span id="name">Name</span> the <span id="occupation">Occupation</span>, <span id="age"></span> years old</li>
+                        <li>Number of rooms walked through: <span id="steps">0</span></li>
+                     </ul>
+                     <h2>NPCs</h2>
+                     <ul class="scoreList">
+
+                        <li>Warden Braunstone: <span class="highlightMe" id="npc1">Neutral</span></li>
+
+                        <li>Immured Llewelyn: <span class="highlightMe" id="npc2">Neutral</span></li>
+
+                        <li>Abstract Entity: <span class="highlightMe" id="npc3">Neutral</span></li>
+
+                        <li>Clandestine Geirleif: <span class="highlightMe" id="npc4">Neutral</span></li>
+
+                        <li>Giant Sculptor: <span class="highlightMe" id="npc5">Neutral</span></li>
+
+                     </ul>
+                     <h3>Rooms Visited</h3>
+                     <ol id="roomList">
+                        <li class="visitedRoom">Your Cell</li>
+                        <li class="visitedRoom">Llewelyn's Cell</li>
+                        <li class="visitedRoom">Destroyed Cell</li>
+                        <li class="visitedRoom">First hallway</li>
+                        <li class="visitedRoom">Sandy Foyer</li>
+                        <li class="visitedRoom">Guard Room</li>
+                        <li class="visitedRoom">Hidden Stairs</li>
+                        <li class="visitedRoom">Guard Hallway</li>
+                        <li class="visitedRoom">Mole's Den</li>
+                        <li class="visitedRoom">Armoury</li>
+                        <li class="visitedRoom">Records</li>
+                        <li class="visitedRoom">Food Storage</li>
+                        <li class="visitedRoom">Long Hallway</li>
+                        <li class="visitedRoom">Upper Foyer</li>
+                        <li class="visitedRoom">Exit</li>
+                        <li class="visitedRoom">Guard Post</li>
+                        <li class="visitedRoom">Upper Hallways</li>
+                        <li class="visitedRoom">War Room</li>
+                        <li class="visitedRoom">Warden's Office</li>
+                        <li class="visitedRoom">???</li>
+                        <li class="visitedRoom">Another hallway</li>
+                        <li class="visitedRoom">Sleeping Quarters</li>
+                        <li class="visitedRoom">Baths</li>
+                        <li class="visitedRoom">Kitchen's</li>
+                        <li class="visitedRoom">Water Wheel</li>
+                        <li class="visitedRoom">Gallery of Statues</li>
+                        <li class="visitedRoom">Ancient Relief</li>
+                        <li class="visitedRoom">Cavernous Quarry</li>
+                        <li class="visitedRoom">Deep Pathways</li>
+                        <li class="visitedRoom">Pipe Room</li>
+                        <li class="visitedRoom">Gear Room</li>
+                        <li class="visitedRoom">Ritual Room</li>
+                        <li class="visitedRoom">Ancient Procession</li>
+                        <li class="visitedRoom">Sage's Quarters</li>
+                        <li class="visitedRoom">Old Storage</li>
+                     </ol>
+               </section>
+            </section>
+      </section>
+    </main>
+    <footer>
+      ...This adventure was designed by Christopher Smith...
+      <br>
+      ...Dungeon Map image created on <a href="https://www.dungeonscrawl.com/" class="highlightMe">Dungeon Scrawl</a>...
+    </footer>
+ </body>
+ </html>

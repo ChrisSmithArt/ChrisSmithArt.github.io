@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adventure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <header>
+      <h1>Adventure 01</h1>
+      <h2>Escape from <i>Deepwoods Vault</i></h2>
+   </header>
+    <nav id="nav">
+      <ul>
+         <li><a class="navLink" id="room1" href="index.html">Introduction</a></li>
+         <li><a class="navLink" id="room2" href="ccform.html">Character Creation</a></li>
+         <li><a class="navLink" id="room3" href="adventure.html">Adventure</a></li>
+         <li><a class="navLink" id="room4" href="score.html">Score</a></li>
+      </ul>
+   </nav>
+    <main>
+      <aside id="inventory">
+         <h3>Inventory</h3>
+         <ul>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+            <li >
+               <img class="item" src="images/item0.png" alt="">
+               <details class="itemInfo">
+                  <summary class="itemName">Item</summary>
+                  Item Description...              
+               </details>
+            </li>
+         </ul>
+      </aside>
+      <section id="mainContainer">
+         <h2 id="areaTitle">Title</h2>
+         <section id="content">
+            <h3 id="areaSubtitle">Subtitle</h3>  
+            <article id="areaDescription">Description...</article>
+            <article id="northDescription">North of you...</article>
+            <article id="southDescription">South of you...</article>
+            <article id="westDescription">West of you...</article>
+            <article id="eastDescription">East of you...</article>
+         </section>
+         <section id="npc">
+            <form id="dialogue">
+               <article id="npcDialogue">The npc says something...</article>
+               <fieldset id="speechOptions" class="radio-item">
+                  <div class="flex">
+                     <input type="radio" name="radio" id="radio1" />
+                     <label id="hostile" for="radio1">RadioButton1</label>
+                  </div>
+                  <div class="flex">
+                     <input type="radio" name="radio" id="radio2" />
+                     <label id="neutral" for="radio2">RadioButton2</label>
+                  </div>
+                  <div class="flex">
+                     <input type="radio" name="radio" id="radio3" />
+                     <label id="friendly" for="radio3">RadioButton3</label>
+                  </div>
+                  <button type="button" id="pushToTalk">Talk</button>
+               </fieldset>
+            </form>
+         </section>
+         <ul id="options">
+            <li><a class="direction" id="north">N</a></li>
+            <li><a class="direction" id="west">W</a></li>
+            <li>#</li>
+            <li><a class="direction" id="east">E</a></li>
+            <li><a class="direction" id="south">S</a></li>
+         </ul>
+      </section>
+    </main>
+    <footer>
+      ...This adventure was designed by Christopher Smith...
+      <br>
+      ...Dungeon Map image created on <a href="https://www.dungeonscrawl.com/" class="highlightMe">Dungeon Scrawl</a>...
+    </footer>
+ </body>
+ </html>

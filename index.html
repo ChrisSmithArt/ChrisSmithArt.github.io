@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adventure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <header>
+      <h1>Adventure 01</h1>
+      <h2>Escape from <i>Deepwoods Vault</i></h2>
+   </header>
+    <nav id="nav">
+      <ul>
+         <li><a class="navLink" id="room1" href="index.html">Introduction</a></li>
+         <li><a class="navLink" id="room2" href="ccform.html">Character Creation</a></li>
+         <li><a class="navLink" id="room3" href="adventure.html">Adventure</a></li>
+         <li><a class="navLink" id="room4" href="score.html">Score</a></li>
+      </ul>
+   </nav>
+    <main>
+      <section id="mainContainer">
+         <h2>Adventure Prototype Introduction</h2>   
+      
+         <article>
+            <h2>Webpage Information</h2>
+            Welcome! This webpage is a prototype for a browser based text-adventure game that harkens back to old adventure games such as Adventure(1980) and NetHack(1982). 
+            While those games use actual graphics to communicate their world and gameplay, this projected has opted for a mostly text-based existence.
+            <br>
+            Additionally the Dark Souls game series provides a great deal of inspiration for the design of the narrative for this Adventure.
+            <h3 class="highlightMe">Warning</h3>
+            Due to the requirements of this project a Navigation bar is included in the design of this webpage. 
+            This navigation bar allows the user to access introduction page, the character creation form, the adventure, and the score page.
+            While the navigation bar is funtional, it is not recommended to use the navigation bar. 
+            This webpage is a linear experience, meaning that there is an intended order to navigate the pages.
+            <br>
+            The order is as such:
+            <br>
+            >This page > Character Creation > Adventure > Score
+            <br>
+            It is not intended that you use the navigation bar to reach these pages, each page will either have a direct link or connect to the next page through user input.
+         </article>
+         
+         
+         <article>   
+            <h3>Information about the adventure</h3>        
+            This page is the homepage for Adventure 01: Escape from Deewooods Vault.  
+            <br>
+            Adventure 01: Escape from Deepwoods Vault is an adventure about playing as a prisoner who was imprisoned within a dungeon. 
+            As the player, and potentially as the character, you do not have the knowledge for why you were imprisoned.
+            The goal of the storytelling in this adventure is to subtely hint at why your character was imprisoned, as well as give vague indications about the current state of the prison.
+            If you are wondering if you misunderstood something relating to the narrative of this adventure, do not worry, details are left intetionally vague.
+            The intent of the narrative and the setting is as important as your interpretation of these things.
+            <br>
+            As the player, you will create and control a Character and navigate them through the dungeon known as The Deepwoods Vault, exploring and understanding this structure, and eventually escaping.
+            <br>
+            It should be noted that escaping is extremely easy at this point in development, but there are a lot of rooms to explore to hopefully get a better sense of the setting.
+            <br>
+            <h4>Recommendation</h4>
+            This is a small recommendation while playing the game that I, as the designer, think would elevate your experience as a player: Draw a map.
+            <br>
+            It's a simple thing, but drawing a map can make the space of the dungeon feel more real in your own imagination. 
+            Additionally, the Score page shows a map of the dungeon and it might be neat as a player to see how your hand-drawn map matches up with the one I made for the adventure.
+            <h4>Game Mechanics</h4>
+            There are a few mechanics to keep in mind when playing. Please consider the following:
+            <ul class="indexList">
+               <li>Highlighted Text: When you see <span class="highlightMe">highlighted text</span> that means you can usually click this text. This typically relates to Items.</li>
+               <li>Items: Your character has an inventory. You'll have a starting item based on their occupation(who they were before their imprisonment). You can add/remove items from your inventory. This is done through clicking highlighted text in a room. You can only drop an item in a room has the option to do so, usually indicated through highlighted text.</li>
+               <li>NPCs: Also known as Non-player Characters. There a few of these in the game. The user interacts with them through a dialogue choice menu. Once you respond to an NPC, that dialogue option is fixed and cannot be changed.</li>
+               <li>Score: At the end of the Adventure you will be brought to a <i>Score</i> page. There is no numerical value for the score, this page is intended to return details about your adventure; such as the number of rooms you traveled through over the course of the adventure.</li>
+               <li>The End: The adventure ends when you exit the dungeon. Once you reach the exit and proceed into daylight the webpage will bring you to the Score page.</li>
+            </ul>       
+         </article>
+            
+         <article>
+            <h3>Future Design</h3>
+            This project is intended to be a prototype. Hopefully I will be able to continue work on this Adventure in addition to creating other.
+            Some of my goals with the continued development of this project are:
+            <ul class="indexList">
+               <li>An improved inventory system.</li>
+               <li>The ability to leave items in any room and retrieve them at a later time.</li>
+               <li>A user account that saves progress so that the player can stop playing and continue playing at a later time.</li>
+               <li>More adventures that connect together into a large web of adventures.</li>
+               <li>A fast travel system, so that the player can return to previously visited areas without walking through every single room.</li>
+            </ul>
+         </article>
+        
+
+         <article>
+            <h2>proceed to character creation...</h2>
+            In the next page you will fill out a form for your User Profile and Player Character.
+            <br>
+            Click <a href="ccform.html" class="highlightMe">Character Creation</a> to proceed to making your character for the adventure.
+         </article> 
+      </section>
+    </main>
+    <footer>
+      ...This adventure was designed by Christopher Smith...
+      <br>
+      ...Dungeon Map image created on <a href="https://www.dungeonscrawl.com/" class="highlightMe">Dungeon Scrawl</a>...
+    </footer>
+ </body>
+ </html>

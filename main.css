@@ -1,0 +1,334 @@
+body{
+    background-color: black;
+    color: yellow;
+    margin: auto;
+    font-family: 'MedievalSharp', cursive;
+    letter-spacing: 3px;
+}
+
+/*
+Score page
+*/
+/*
+Map Image
+*/
+#map{
+    width: 50%;
+    margin-right: 50px;
+}
+
+#roomList li{
+    margin: 25px;
+
+}
+
+
+/*
+This is for everything referring to the Character Creation Form
+*/
+
+#ccForm{
+    text-align: center;
+}
+
+.formElement{
+    margin: auto;
+    padding: 10px;
+
+}
+
+.formElement label, .formElement input, .formElement select{
+    margin: auto;
+    padding: 10px;
+}
+
+.formError{
+    display: none;
+}
+
+#secondaryContainer{
+    display: flex;
+}
+
+footer, header{
+    text-align: center;
+}
+
+#mainContainer{
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+ul{
+    text-align: center;
+    list-style: none;
+    list-style-position:outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.scoreList{
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.highlightMe{
+    color: red;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 55px;
+    align-content: start;
+}
+
+article{
+    padding: 12px 0px;
+}
+
+#content{
+    margin: 0px 30px;
+}
+
+/*
+everything to do with the nav-bar #map
+*/
+#nav{
+    border: 2px solid yellow;
+    padding: 15px;
+}
+
+#nav ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#nav ul li{
+    width: 25%;
+    padding: 10px 0px;
+}
+
+
+/*
+Everything to do with the aside #Inventory
+*/
+#inventory{
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+#inventory h3{
+    padding: 15px 0px;
+    text-decoration: underline;
+}
+
+#inventory ul li{
+    width: 90%;
+    padding: 5px;
+}
+
+.item{
+    width: 75px;
+}
+
+.itemName{
+    padding: 5px;
+    font-size: 16px;
+}
+
+.itemDescription{
+    font-size: 10px;
+    text-align: center;
+}
+
+/*
+Everything to do with the #options directional map
+*/
+#options{
+    border: 2px dashed yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 185px;
+    margin: auto;
+    padding: 10px 0px;
+    align-self: end;
+}
+
+#options li{
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+#options li:nth-of-type(1), #options li:nth-of-type(5) {
+    width: 100%;
+}
+
+#options li:nth-of-type(2), #options li:nth-of-type(3), #options li:nth-of-type(4) {
+    width: 25%;
+}
+
+
+
+/*
+Everything to do with the NPC dialogue form
+*/
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid yellow;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  /* appearance for checked radiobutton */
+  input[type="radio"]:checked {
+    background-color: yellow;
+  }
+  
+  /* optional styles, I'm using this for centering radiobuttons */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+fieldset{
+    margin: 5px 0px 25px;
+}
+
+
+
+#pushToTalk {
+    background-color: black;
+    border: 1px dashed yellow;
+    color: yellow;
+    padding: 5px 5px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  button, input, select{
+    background-color: black;
+    border: 1px dashed yellow;
+    color: yellow;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+fieldset{
+    border: 1px yellow dashed;
+}
+
+.indexList{
+    text-align: left;
+}
+
+
+/*
+Everything inside the media query is for when the window's width is atleast 680px
+So anything bigger than 680px wide has the following styles applied to it
+*/
+@media (min-width: 860px){
+
+    #mainContainer{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+
+/*
+everything to do with the nav-bar #map
+*/
+    #map ul{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    #map ul li{
+        width: auto;
+        padding: 10px 0px;
+    }
+
+
+/*
+Everything to do with the aside #Inventory
+*/
+    #inventory{
+        width: 20%;
+        margin: 15px;
+        text-align: center;
+        border: 2px solid yellow;
+    }
+
+    #inventory ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    #inventory ul li{
+        width: 50%;
+        padding: 25px 0px;
+    }
+
+    
+
+/*
+Everything to do with the #options directional map
+*/
+    #options{
+        border: 2px dashed yellow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 240px;
+        margin: auto;
+        padding: 10px 0px;
+        
+    }
+
+    #options li{
+        padding: 15px 0px;
+        font-size: 30px;
+    }
+
+    #options li:nth-of-type(1), #options li:nth-of-type(5) {
+        width: 100%;
+    }
+
+    #options li:nth-of-type(2), #options li:nth-of-type(3), #options li:nth-of-type(4) {
+        width: 25%;
+    }
+
+
+
+}

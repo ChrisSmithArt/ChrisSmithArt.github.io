@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adventure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='form.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <header>
+      <h1>Adventure 01</h1>
+      <h2>Escape from <i>Deepwoods Vault</i></h2>
+   </header>
+    <nav id="nav">
+      <ul>
+         <li><a class="navLink" id="room1" href="index.html">Introduction</a></li>
+         <li><a class="navLink" id="room2" href="ccform.html">Character Creation</a></li>
+         <li><a class="navLink" id="room3" href="adventure.html">Adventure</a></li>
+         <li><a class="navLink" id="room4" href="score.html">Score</a></li>
+      </ul>
+   </nav>
+    <main>
+         <section id="secondaryContainer">
+            <section>
+               <article>
+                  <h2>Character Creation Menu</h2>
+                  In on this page you will create a character for Adventure 01: Escape from Deewooods Vault.         
+               </article>
+              
+               <article>
+                  <h3>Deepwoods Vault</h3>
+                  Information about the adventure...
+               </article>
+            </section>
+            <form action="adventure.html" method="post">
+               <fieldset id="ccForm">
+                  <legend>Character Creation Form</legend>
+                  <div class="formElement">
+                     <div class="highlightMe formError" id="pNameError">You must enter your name</div>
+                     <label for="playerName">Player Name:</label>
+                     <input type="text" id="playerName" name="pName"/>
+                  </div>
+                  <div class="formElement">
+                     <div class="highlightMe formError" id="emailError">You must enter an email</div>
+                     <div class="highlightMe formError" id="emailErrorFormat">Not a valid email format</div>
+                     <label for="playerEmail">Player Email:</label>
+                     <input type="email" id="playerEmail" name="pEmail"/>
+                  </div>
+                  <div class="formElement">
+                     <div class="highlightMe formError" id="cNameError">You must enter a character name</div>
+                     <label for="characterName">Character Name:</label>
+                     <input type="text" id="characterName" name="cName"/>
+                  </div>
+                  <div class="formElement">
+                     <div class="highlightMe formError" id="ageError">You must enter a character age</div>
+                     <label for="characterAge">Character Age:</label>
+                     <input type="number" id="characterAge" name="cAge"/>
+                  </div>
+                  <div class="formElement">
+                     <div class="highlightMe formError" id="occupationError">You must select an Occupation</div>
+                     <label for="characterOccupation">Character Occupation</label>
+                     <select name="class" id="characterOccupation">
+                        <option value="selectOccupation">Pick an Occupation</option>
+                        <option value="1">Brute</option>
+                        <option value="2">Sage</option>
+                        <option value="3">Thief</option>
+                        <option value="4">Wanderer</option>
+                        <option value="5">Cultist</option>
+                     </select>
+                  </div>
+                  <div>
+                     <fieldset id="markingType">
+                     <legend>Mysterious Marking</legend>
+                     <div class="highlightMe formError" id="radioError">You must select a marking</div>
+                     <br>
+                     <label for="rad1">Mark of the Sentinel</label>
+                     <input type="radio" name="rad" class="radMark" value="rad1" id="rad1">
+                     <br>
+                     <label for="rad2">Mark of the Hunter</label>
+                     <input type="radio" name="rad" class="radMark" value="rad2" id="rad2">
+                     <br>
+                     <label for="rad3">Mark of the Berserker</label>
+                     <input type="radio" name="rad" class="radMark" value="rad3" id="rad3">
+                     </fieldset>
+                  </div>
+                  <button id="submitButton" type="button">Submit Character Creation</button>
+                  <button id="resetButton" type="reset">Reset Character Creation</button>
+               </fieldset>
+            </form>
+         </section>
+      </main>
+    <footer>
+      ...This adventure was designed by Christopher Smith...
+      <br>
+      ...Dungeon Map image created on <a href="https://www.dungeonscrawl.com/" class="highlightMe">Dungeon Scrawl</a>...
+    </footer>
+ </body>
+ </html>
