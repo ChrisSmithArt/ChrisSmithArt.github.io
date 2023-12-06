@@ -557,7 +557,7 @@ const room37 = {
 
 const room38 = {
     roomName: "Dark Room",
-    roomNum: 5,
+    roomNum: 38,
     roomSub: "An obscured space...",
     roomDisc: "The room is eclipsed in darkness, you dare not enter lest you risk your own safety and sacrifice your newfound freedom...",
     northRoom: 0,

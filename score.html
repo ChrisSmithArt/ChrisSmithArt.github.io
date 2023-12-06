@@ -27,29 +27,37 @@
     <main>
       <section id="mainContainer">
          <h2>Player Results</h2>
-         <article>This is the score page</article>
-               <section id="secondaryContainer">
-                  <img id="map" src="map00_33x72.png" alt="dungeon map">
+         <article>
+            This is the score page. This page details what you as the player have discovered in your playthrough of Adventure 01: Escape from Deepwoods Vault.
+         </article>
+         
+         <div id="scorePart1">
+            <ul class="scoreList">
+               <h2> Player Name: <span id="playerName">Name</span></h2>
+               <li><span id="name">Name</span> the <span id="occupation">Occupation</span></li>
+               <li><span id="age"></span> years old</li>
+               <li>Number of rooms walked through: <span id="steps">0</span></li>
+            </ul>
+            
+               <ul class="scoreList">
+                  <h2>NPCs</h2>
+                  <li>Warden Braunstone: <span class="highlightMe" id="npc1">Neutral</span></li>
+
+                  <li>Immured Llewelyn: <span class="highlightMe" id="npc2">Neutral</span></li>
+
+                  <li>Abstract Entity: <span class="highlightMe" id="npc3">Neutral</span></li>
+
+                  <li>Clandestine Geirleif: <span class="highlightMe" id="npc4">Neutral</span></li>
+
+                  <li>Giant Sculptor: <span class="highlightMe" id="npc5">Neutral</span></li>
+
+               </ul>
+         </div>
+               <section id="scoreContainer">
+                  <img id="mapIMG" src="map00_33x72.png" alt="dungeon map">
                   <section>
-                     <h2> Player Name: <span id="playerName">Name</span></h2>
-                     <ul class="scoreList">
-                        <li><span id="name">Name</span> the <span id="occupation">Occupation</span>, <span id="age"></span> years old</li>
-                        <li>Number of rooms walked through: <span id="steps">0</span></li>
-                     </ul>
-                     <h2>NPCs</h2>
-                     <ul class="scoreList">
-
-                        <li>Warden Braunstone: <span class="highlightMe" id="npc1">Neutral</span></li>
-
-                        <li>Immured Llewelyn: <span class="highlightMe" id="npc2">Neutral</span></li>
-
-                        <li>Abstract Entity: <span class="highlightMe" id="npc3">Neutral</span></li>
-
-                        <li>Clandestine Geirleif: <span class="highlightMe" id="npc4">Neutral</span></li>
-
-                        <li>Giant Sculptor: <span class="highlightMe" id="npc5">Neutral</span></li>
-
-                     </ul>
+                     
+                     
                      <h3>Rooms Visited</h3>
                      <ol id="roomList">
                         <li class="visitedRoom">Your Cell</li>
@@ -96,6 +104,10 @@
       ...This adventure was designed by Christopher Smith...
       <br>
       ...Dungeon Map image created on <a href="https://www.dungeonscrawl.com/" class="highlightMe">Dungeon Scrawl</a>...
+      <br>
+      ...This webpage is also hosted on Github Pages though this <a class="highlightMe" href="https://chrissmithart.github.io/">Link</a>...
+      <br>
+      ...Artwork on this webpage, unless otherwise stated was created by <a class="highlightMe" href="https://www.chris-smith-art.com/">Christopher Smith</a>...
     </footer>
  </body>
  </html>

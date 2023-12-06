@@ -12,9 +12,14 @@ Score page
 /*
 Map Image
 */
-#map{
-    width: 50%;
-    margin-right: 50px;
+#mapIMG{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+#scorePart1{
+    display: block;
 }
 
 #roomList li{
@@ -45,6 +50,7 @@ This is for everything referring to the Character Creation Form
     text-align: center;
 }
 
+
 .formElement{
     margin: auto;
     padding: 10px;
@@ -61,11 +67,20 @@ This is for everything referring to the Character Creation Form
 }
 
 #secondaryContainer{
-    display: flex;
+    display: block;
+    margin: 25px;
+}
+
+#scoreContainer{
+    display: block;
 }
 
 footer, header{
     text-align: center;
+}
+
+footer{
+    margin-bottom: 35px;
 }
 
 #mainContainer{
@@ -120,10 +135,11 @@ everything to do with the nav-bar #map
 #nav{
     border: 2px solid yellow;
     padding: 15px;
+    margin: auto 15px;
 }
 
 #nav ul{
-    display: flex;
+    display: block;
     text-align: center;
     width: 100%;
     justify-content: space-evenly;
@@ -131,8 +147,9 @@ everything to do with the nav-bar #map
 }
 
 #nav ul li{
-    width: 25%;
+    width: 100%;
     padding: 10px 0px;
+    border: 2px solid yellow;
 }
 
 
@@ -230,9 +247,7 @@ input[type="radio"] {
     align-items: center;
   }
 
-fieldset{
-    margin: 5px 0px 25px;
-}
+
 
 
 
@@ -260,6 +275,8 @@ fieldset{
   }
 
 fieldset{
+    margin: auto;
+    width: 90%;
     border: 1px yellow dashed;
 }
 
@@ -274,9 +291,56 @@ fieldset{
 
 /*
 Everything inside the media query is for when the window's width is atleast 680px
-So anything bigger than 680px wide has the following styles applied to it
+So anything bigger than 900px wide has the following styles applied to it
 */
 @media (min-width: 900px){
+
+#secondaryContainer{
+    display: block;
+    margin: 25px;
+}
+
+#scoreContainer{
+    display: flex;
+}
+
+#mapIMG{
+    width: 50%;
+}
+#scorePart1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset{
+    margin: auto;
+    width: 600px;
+    border: 1px yellow dashed;
+}
+
+    /*
+everything to do with the nav-bar #map
+*/
+#nav{
+    border: 2px solid yellow;
+    padding: 15px;
+    margin: auto 5px;
+}
+
+#nav ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#nav ul li{
+    width: 25%;
+    padding: 10px 0px;
+    border: none;
+}
+
 
     #mainContainer{
         width: 80%;
