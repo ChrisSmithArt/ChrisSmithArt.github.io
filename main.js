@@ -35,7 +35,7 @@ const room2 = {
     southRoom: 4,
     westRoom: 0,
     eastRoom: 0,
-    npc: 0,
+    npc: 2,
     itemCheck: 0,
     visited: 1
 }
@@ -66,7 +66,7 @@ const room4 = {
     westRoom: 5,
     eastRoom: 3,
     npc: 0,
-    itemCheck: 2,
+    itemCheck: 12,
     visited: 1
 }
 
@@ -135,7 +135,7 @@ const room9 = {
     southRoom: 8,
     westRoom: 0,
     eastRoom: 0,
-    npc: 0,
+    npc: 4,
     itemCheck: 0,
     visited: 1
 }
@@ -158,8 +158,8 @@ const room11 = {
     roomName: "Records",
     roomNum: 11,
     roomSub: "The land's memories...",
-    roomDisc: "This room is filled with shelves housing legders and scrolls, likely detailing the comings and goings of whoever makes their way through this dungeon. Too bad it's all in a language you cannot read...",
-    northRoom: 12,
+    roomDisc: `This room is filled with shelves housing legders and scrolls, likely detailing the comings and goings of whoever makes their way through this dungeon. A large <a id="pickUp" href="#" class="highlightMe">tome</a> stick out...`,
+    northRoom: 38,
     southRoom: 10,
     westRoom: 0,
     eastRoom: 13,
@@ -206,8 +206,8 @@ const room14 = {
     roomDisc: "This large foyer was once used as reception for the dungeon. The exit is closeby, you remember this being the first room upon being brought to the dungeon...",
     northRoom: 15,
     southRoom: 5,
-    westRoom: 0,
-    eastRoom: 0,
+    westRoom: 21,
+    eastRoom: 17,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -220,7 +220,7 @@ const room15 = {
     roomSub: "The road to freedom...",
     roomDisc: "A long hallway constructed out of brick and cobblestone, at the far end is bright daylight. You'd almost forgotten what it looks like. Only a few more steps to freedom...",
     northRoom: 36,
-    southRoom: 15,
+    southRoom: 14,
     westRoom: 16,
     eastRoom: 0,
     npc: 0,
@@ -233,7 +233,7 @@ const room16 = {
     roomName: "Guard Post",
     roomNum: 16,
     roomSub: "Alcove of Treachery...",
-    roomDisc: "This small guardroom, with a single cot and chair, sits unnoticed. It seems intended as a point of ambush for anyone assailing the dungeon. It didn't work too well, the walls are splattered with the blood of whoever was posted here...",
+    roomDisc: `This small guardroom, with a single cot and chair, sits unnoticed. It seems intended as a point of ambush for anyone assailing the dungeon. It didn't work too well, the walls are splattered with the blood of whoever was posted here. There is a small table with red <a id="pickUp" href="#" class="highlightMe">coin</a>`,
     northRoom: 0,
     southRoom: 0,
     westRoom: 0,
@@ -248,7 +248,7 @@ const room17 = {
     roomNum: 17,
     roomSub: "The crossroads...",
     roomDisc: "A long hallway that ends in a T-junction. It seems cleaner here than in other areas. There's even a carpet...",
-    northRoom: 18,
+    northRoom: 37,
     southRoom: 20,
     westRoom: 14,
     eastRoom: 0,
@@ -261,11 +261,11 @@ const room18 = {
     roomName: "The War Room",
     roomNum: 18,
     roomSub: "The enemy's diary...",
-    roomDisc: "This room is occupied by a long table surrounded by chairs. The table is cloven in two and the chairs smashed. It looks like the remains of a tactical map were once atop the table...",
+    roomDisc: `This room is occupied by a long table surrounded by chairs. The table is cloven in two and the chairs smashed. It looks like the remains of a tactical map were once atop the table, there is an <a id="pickUp" href="#" class="highlightMe">invoice</a> on the floor...`,
     northRoom: 0,
     southRoom: 17,
-    westRoom: 19,
-    eastRoom: 0,
+    westRoom: 0,
+    eastRoom: 19,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -277,8 +277,8 @@ const room19 = {
     roomSub: "A broken adversary...",
     roomDisc: `Beyond the large iron door is the office of the Warden's Office. The room is ruined, furniture smashed. <span class=highlightMe>The Warden</span> looks broken, both physically and emotionally. The `,
     northRoom: 0,
-    southRoom: 18,
-    westRoom: 0,
+    southRoom: 0,
+    westRoom: 18,
     eastRoom: 0,
     npc: 1,
     itemCheck: 0,
@@ -309,7 +309,7 @@ const room21 = {
     northRoom: 0,
     southRoom: 22,
     westRoom: 24,
-    eastRoom: 0,
+    eastRoom: 14,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -340,7 +340,7 @@ const room23 = {
     southRoom: 22,
     westRoom: 0,
     eastRoom: 0,
-    npc: 0,
+    npc: 3,
     itemCheck: 0,
     visited: 1
 }
@@ -349,7 +349,7 @@ const room23 = {
 const room24 = {
     roomName: "Kitchens",
     roomNum: 24,
-    roomSub: "This room is occupied by a large table at one end lined with chairs and set for a meal, though no food is present. On the other end of the room is a large firepit with a grill and a massive stock pot...",
+    roomSub: `This room is occupied by a large table at one end lined with chairs and set for a meal where you notice a strange <a id="pickUp" href="#" class="highlightMe">bone</a>, though no food is present. On the other end of the room is a large firepit with a grill and a massive stock pot...`,
     roomDisc: "...",
     northRoom: 22,
     southRoom: 0,
@@ -366,11 +366,11 @@ const room25 = {
     roomName: "Water Wheel",
     roomNum: 25,
     roomSub: "Ancient wonder...",
-    roomDisc: "This room contains a massive waterwheel, constructed of metal and propelled by a small stream cutting through the center of the room. Mosses and fungi envelop most surfaces here. The source of the small stream is projected by a metal grate on either end. The waterwheel connects to another room with filled with pipes.",
+    roomDisc: `This room contains a massive waterwheel, constructed of metal and propelled by a small stream cutting through the center of the room. Mosses and fungi envelop most surfaces here. A <a id="pickUp" href="#" class="highlightMe">Strange Mushroom</a> grows among the fungi. The source of the small stream is projected by a metal grate on either end. The waterwheel connects to another room with filled with pipes.`,
     northRoom: 7,
     southRoom: 0,
     westRoom: 26,
-    eastRoom: 0,
+    eastRoom: 29,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -386,7 +386,7 @@ const room26 = {
     southRoom: 28,
     westRoom: 0,
     eastRoom: 25,
-    npc: 0,
+    npc: 5,
     itemCheck: 0,
     visited: 1
 }
@@ -428,9 +428,9 @@ const room29 = {
     roomSub: "Long forgotten footsteps...",
     roomDisc: "This T-intersection hallway is narrow with a dirt floor. There is a dim light from bioluminescent fungi. The walls are solid stone...",
     northRoom: 0,
-    southRoom: 30,
-    westRoom: 32,
-    eastRoom: 25,
+    southRoom: 32,
+    westRoom: 25,
+    eastRoom: 39,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -501,7 +501,7 @@ const room34 = {
     roomName: "Sage's Quarters",
     roomNum: 34,
     roomSub: "Wisdom Incarnate...",
-    roomDisc: "...",
+    roomDisc: `A simple room, no decorations, just a simple mat in the middle of the room for sleeping. Atop the mat you notice a <a id="pickUp" href="#" class="highlightMe">broken sword</a>`,
     northRoom: 33,
     southRoom: 0,
     westRoom: 0,
@@ -542,15 +542,15 @@ const room36 = {
 
 const room37 = {
     roomName: "Dark Room",
-    roomNum: 5,
+    roomNum: 37,
     roomSub: "An obscured space...",
     roomDisc: "The room is eclipsed in darkness, you dare not enter lest you risk your own safety and sacrifice your newfound freedom...",
     northRoom: 0,
-    southRoom: 3,
+    southRoom: 17,
     westRoom: 0,
     eastRoom: 0,
     npc: 0,
-    itemCheck: 2,
+    itemCheck: 12,
     visited: 1
 }
 
@@ -561,45 +561,32 @@ const room38 = {
     roomSub: "An obscured space...",
     roomDisc: "The room is eclipsed in darkness, you dare not enter lest you risk your own safety and sacrifice your newfound freedom...",
     northRoom: 0,
-    southRoom: 3,
+    southRoom: 11,
     westRoom: 0,
     eastRoom: 0,
     npc: 0,
-    itemCheck: 2,
+    itemCheck: 12,
     visited: 1
 }
 
 const room39 = {
     roomName: "Dark Room",
-    roomNum: 5,
+    roomNum: 39,
     roomSub: "An obscured space...",
     roomDisc: "The room is eclipsed in darkness, you dare not enter lest you risk your own safety and sacrifice your newfound freedom...",
     northRoom: 0,
-    southRoom: 3,
-    westRoom: 0,
-    eastRoom: 0,
+    southRoom: 0,
+    westRoom: 29,
+    eastRoom: 31,
     npc: 0,
-    itemCheck: 2,
+    itemCheck: 12,
     visited: 1
 }
 
-const room97 = {
-    roomName: "Stairwell",
-    roomNum: 6,
-    roomSub: "An ascent towards the unknown...",
-    roomDisc: "A worn and weathered wooden stairwell leading upwards into a small, brick room...",
-    northRoom: 9,
-    southRoom: 3,
-    westRoom: 0,
-    eastRoom: 0,
-    npc: 0,
-    itemCheck: 0,
-    visited: 1
-}
 
-const room98 = {
+const room40 = {
     roomName: "Darkened hallway",
-    roomNum: 8,
+    roomNum: 40,
     roomSub: "The shadow of hope...",
     roomDisc: `This is the darkened hallway that exists outside of your old dungeon cell, there is an empty sconce where a <a id="pickUp" href="#" class="highlightMe">torch</a> once flickered, giving you hope of escape.`,
     northRoom: 0,
@@ -650,10 +637,13 @@ const optionDisc = [
     "a wider passage with ceremonial markins on the walls",
     "a room filled with shelves housing jars and scrolls...",
     "a bedroom with ceremonial markings on the walls...",
-    "daylight..."
+    "daylight...",
+    "darkness",
+    "darkness",
+    "darkness"
     ]
 
-const roomList = [room0, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25, room26, room27, room28, room29, room30, room31, room32, room33, room34, room35, room36];
+const roomList = [room0, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25, room26, room27, room28, room29, room30, room31, room32, room33, room34, room35, room36, room37, room38, room39];
 
 var currentRoom = 1;
 
@@ -667,43 +657,91 @@ const item0 = {
 }
 
 const item1 = {
-    itemName: "Peculiar Doll",
+    itemName: "Flower",
     itemNum: 1,
     itemImg: "images/item1.png",
-    itemDisc: "A strange doll in strange dress...."
+    itemDisc: "A flower found on your person before capture, somehow it remains intact..."
 }
 
 const item2 = {
-    itemName: "Torch",
+    itemName: "Time Piece",
     itemNum: 2,
     itemImg: "images/item2.png",
-    itemDisc: "A flickering torch, found outside your cell...."
+    itemDisc: "A brass pocket watch you've kept wound and working all this time..."
 }
 
 const item3 = {
-    itemName: "Broken Sword",
+    itemName: "Dice",
     itemNum: 3,
     itemImg: "images/item3.png",
-    itemDisc: "All that remains is a hilt and a bit of the broken blade...."
+    itemDisc: "A set of dice carved from bone..."
 }
 
 const item4 = {
-    itemName: "Old tome",
+    itemName: "Tattered Map",
     itemNum: 4,
     itemImg: "images/item4.png",
-    itemDisc: "A moldy old book in a language you cannot read...."
+    itemDisc: "A piece of a map that's tattered and torn..."
 }
 
 const item5 = {
-    itemName: "Invoice",
+    itemName: "Peculiar Doll",
     itemNum: 5,
     itemImg: "images/item5.png",
+    itemDisc: "A strange doll in strange dress...."
+}
+
+const item6 = {
+    itemName: "Coin",
+    itemNum: 6,
+    itemImg: "images/item6.png",
+    itemDisc: "An unfamiliar coin made out of red metal..."
+}
+
+const item7 = {
+    itemName: "Strange Mushroom",
+    itemNum: 7,
+    itemImg: "images/item7.png",
+    itemDisc: "An mushroom of unknown properties..."
+}
+
+const item8 = {
+    itemName: "Broken Sword",
+    itemNum: 8,
+    itemImg: "images/item8.png",
+    itemDisc: "All that remains is a hilt and a bit of the broken blade...."
+}
+
+const item9 = {
+    itemName: "Invoice",
+    itemNum: 9,
+    itemImg: "images/item9.png",
     itemDisc: "An invoice for the transfer of prisoners...."
 }
 
-const itemList = [item0, item1, item2, item3, item4, item5];
+const item10 = {
+    itemName: "Bone",
+    itemNum: 10,
+    itemImg: "images/item10.png",
+    itemDisc: "A bone of an unknown creature..."
+}
 
-var inventory = [1, 0, 0, 0, 0, 0, 0, 0];
+const item11 = {
+    itemName: "Tome",
+    itemNum: 11,
+    itemImg: "images/item11.png",
+    itemDisc: "A moldy old book written in a language you cannot read...."
+}
+
+const item12 = {
+    itemName: "Torch",
+    itemNum: 12,
+    itemImg: "images/item12.png",
+    itemDisc: "A flickering torch, found outside your cell...."
+}
+const itemList = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12];
+
+var inventory = [0, 0, 0, 0, 0, 0, 0, 0];
 
 
 const npc0 = {
@@ -715,7 +753,7 @@ const npc0 = {
 }
 
 const npc1 = {
-    npcName: "The Warden",
+    npcName: "Warden Braunstone",
     npcNum: 1,
     npcSpeech: ["So...you're free...I won't-I can't stop you...what do you want from me?", "...", "...you're still here?", "...good to see you're still alive."],
     npcOptions: ["Piss off and die...", "You've seen better days...", "I'll go find help!"],
@@ -723,34 +761,34 @@ const npc1 = {
 }
 
 const npc2 = {
-    npcName: "",
-    npcNum: 0,
-    npcSpeech: ["", "", "", "",],
-    npcOptions: ["Hostile", "Neutral", "Friendly"],
+    npcName: "Immured Llewelyn",
+    npcNum: 2,
+    npcSpeech: ["Oh my...look who got free...not me, I of course must await destiny...", "Can't wait until I get out here...neighbor...", "Ah...how typical...", "I've always been fond of you...neighbor...",],
+    npcOptions: ["Freak...", "Okay...sure...", "Don't worry, I'll go find a key!"],
     npcState: 0
 }
 
 const npc3 = {
-    npcName: "",
-    npcNum: 0,
-    npcSpeech: ["", "", "", "",],
-    npcOptions: ["Hostile", "Neutral", "Friendly"],
+    npcName: "Abstract Entity",
+    npcNum: 3,
+    npcSpeech: ["#$*%???", "!!**&#@?!", "...?", "##$@@@!",],
+    npcOptions: ["Y-you're somekind of monster...!", "...I'm not sure I'm okay with this.", "...I don't understand you, but I hope you can consider me a friend."],
     npcState: 0
 }
 
 const npc4 = {
-    npcName: "",
-    npcNum: 0,
-    npcSpeech: ["", "", "", "",],
-    npcOptions: ["Hostile", "Neutral", "Friendly"],
+    npcName: "Clandestine Geirleif",
+    npcNum: 4,
+    npcSpeech: ["Welcome newcomer...please do not disturb my dirt...", "Foul interloper! What do you want in my sacred dirt?!", "Ah...the newcomer...", "Friend! The dirt and I welcome you!",],
+    npcOptions: ["...gross", "the dirt? Sure...whatever...", "Ah, I didn't mean to intrude. Nice home you have here."],
     npcState: 0
 }
 
 const npc5 = {
-    npcName: "",
-    npcNum: 0,
-    npcSpeech: ["", "", "", "",],
-    npcOptions: ["Hostile", "Neutral", "Friendly"],
+    npcName: "Giant Sculptor",
+    npcNum: 5,
+    npcSpeech: ["Ah...greetings small one...", "Be quick or I'll make a grave for you too...", "Welcome...", "It is good to see you, maybe one day we can make a statue together.",],
+    npcOptions: ["...You're an ugly one, aren't you?", "...How did you even fit in here?", "Did you carve all of these? Quite impressive."],
     npcState: 0
 }
 
@@ -771,6 +809,9 @@ function load(){
     }
     document.getElementById("npc").style.display = "none";
 
+    let startingItem = localStorage.getItem("Occupation");
+    inventory[0] = startingItem;
+
     roomLoad(1);
     loadInventory();
 }
@@ -780,6 +821,9 @@ function loadInventory(){
     //this is called when the game loads, getting the inventory from the JSON file
     //The JSON file should be constructed after character creation, but maybe the player can save their file to load it up later if they want to take a break?
     //But essentially this will put 
+
+    
+
 
     const inventoryInfo = document.getElementsByClassName("itemInfo");
     const inventoryImgs = document.getElementsByClassName("item");
@@ -796,6 +840,10 @@ function loadNPC(){
     npcSays.innerHTML = `<span class="highlightMe"> ${npcList[roomList[currentRoom].npc].npcName} says: </span>` + npcList[roomList[currentRoom].npc].npcSpeech[npcList[roomList[currentRoom].npc].npcState];
 
     if(npcList[roomList[currentRoom].npc].npcState == 0){
+
+        console.log("npc loaded, talk now");
+
+        document.getElementById("speechOptions").style.display = "block";
 
         const talkButton = document.getElementById("pushToTalk");
         talkButton.addEventListener("click",submitDialogue);
@@ -844,6 +892,7 @@ function roomChange(direct){
     } else if(direct == "W" && roomList[currentRoom].westRoom !=0){
         currentRoom = roomList[currentRoom].westRoom;
     } else if(direct == "E" && roomList[currentRoom].eastRoom !=0){
+        console.log(roomList[currentRoom].eastRoom);
         currentRoom = roomList[currentRoom].eastRoom;
     }
     if(currentRoom != 0){
@@ -915,20 +964,39 @@ function roomLoad(roomNumber){
     }
 
     if(roomList[roomNumber].itemCheck != 0){
-        if(roomList[roomNumber].roomNum == 5){
+        if(roomList[roomNumber].roomNum == 37){
             for (let i = 0; i < inventory.length; i++) {
                 if(inventory[i] == roomList[roomNumber].itemCheck){
-                    roomLoad(7);
+                    currentRoom = 18;
+                    roomLoad(18);
                 }
             }
         }
-        if(roomList[roomNumber].roomNum == 2){
+        if(roomList[roomNumber].roomNum == 38){
             for (let i = 0; i < inventory.length; i++) {
                 if(inventory[i] == roomList[roomNumber].itemCheck){
-                    roomLoad(8);
+                    currentRoom = 12;
+                    roomLoad(12);
                 }
             }
-        }  
+        }
+        if(roomList[roomNumber].roomNum == 39){
+            for (let i = 0; i < inventory.length; i++) {
+                if(inventory[i] == roomList[roomNumber].itemCheck){
+                    currentRoom = 30;
+                    roomLoad(30);
+                }
+            }
+        }
+        if(roomList[roomNumber].roomNum == 4){
+            for (let i = 0; i < inventory.length; i++) {
+                if(inventory[i] == roomList[roomNumber].itemCheck){
+                    currentRoom = 40;
+                    roomLoad(40);
+                }
+            }
+        }
+
     }
 }
 
