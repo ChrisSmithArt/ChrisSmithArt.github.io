@@ -158,7 +158,7 @@ const room11 = {
     roomName: "Records",
     roomNum: 11,
     roomSub: "The land's memories...",
-    roomDisc: `This room is filled with shelves housing legders and scrolls, likely detailing the comings and goings of whoever makes their way through this dungeon. A large <a id="pickUp" href="#" class="highlightMe">tome</a> stick out...`,
+    roomDisc: `This room is filled with shelves housing legders and scrolls, likely detailing the comings and goings of whoever makes their way through this dungeon. A large <a id="pickUp" class="highlightMe">tome</a> stick out...`,
     northRoom: 38,
     southRoom: 10,
     westRoom: 0,
@@ -233,7 +233,7 @@ const room16 = {
     roomName: "Guard Post",
     roomNum: 16,
     roomSub: "Alcove of Treachery...",
-    roomDisc: `This small guardroom, with a single cot and chair, sits unnoticed. It seems intended as a point of ambush for anyone assailing the dungeon. It didn't work too well, the walls are splattered with the blood of whoever was posted here. There is a small table with red <a id="pickUp" href="#" class="highlightMe">coin</a>`,
+    roomDisc: `This small guardroom, with a single cot and chair, sits unnoticed. It seems intended as a point of ambush for anyone assailing the dungeon. It didn't work too well, the walls are splattered with the blood of whoever was posted here. There is a small table with red <a id="pickUp" class="highlightMe">coin</a>`,
     northRoom: 0,
     southRoom: 0,
     westRoom: 0,
@@ -261,7 +261,7 @@ const room18 = {
     roomName: "The War Room",
     roomNum: 18,
     roomSub: "The enemy's diary...",
-    roomDisc: `This room is occupied by a long table surrounded by chairs. The table is cloven in two and the chairs smashed. It looks like the remains of a tactical map were once atop the table, there is an <a id="pickUp" href="#" class="highlightMe">invoice</a> on the floor...`,
+    roomDisc: `This room is occupied by a long table surrounded by chairs. The table is cloven in two and the chairs smashed. It looks like the remains of a tactical map were once atop the table, there is an <a id="pickUp" class="highlightMe">invoice</a> on the floor...`,
     northRoom: 0,
     southRoom: 17,
     westRoom: 0,
@@ -307,8 +307,8 @@ const room21 = {
     roomSub: "More passages...",
     roomDisc: "This is a simple hallway...",
     northRoom: 0,
-    southRoom: 22,
-    westRoom: 24,
+    southRoom: 24,
+    westRoom: 22,
     eastRoom: 14,
     npc: 0,
     itemCheck: 0,
@@ -322,7 +322,7 @@ const room22 = {
     roomSub: "The enemy's den...",
     roomDisc: "This room is occupied by a series of bunk beds, now covered in dried blood. This is where the guards slept, and this is where the guard died...",
     northRoom: 23,
-    southRoom: 0,
+    southRoom: 22,
     westRoom: 0,
     eastRoom: 21,
     npc: 0,
@@ -350,8 +350,8 @@ const room24 = {
     roomName: "Kitchens",
     roomNum: 24,
     roomSub: "The enemy's dining hall...",
-    roomDisc: `This room is occupied by a large table at one end lined with chairs and set for a meal where you notice a strange <a id="pickUp" href="#" class="highlightMe">bone</a>, though no food is present. On the other end of the room is a large firepit with a grill and a massive stock pot...`,
-    northRoom: 22,
+    roomDisc: `This room is occupied by a large table at one end lined with chairs and set for a meal where you notice a strange <a id="pickUp" class="highlightMe">bone</a>, though no food is present. On the other end of the room is a large firepit with a grill and a massive stock pot...`,
+    northRoom: 21,
     southRoom: 0,
     westRoom: 0,
     eastRoom: 0,
@@ -366,7 +366,7 @@ const room25 = {
     roomName: "Water Wheel",
     roomNum: 25,
     roomSub: "Ancient wonder...",
-    roomDisc: `This room contains a massive waterwheel, constructed of metal and propelled by a small stream cutting through the center of the room. Mosses and fungi envelop most surfaces here. A <a id="pickUp" href="#" class="highlightMe">Strange Mushroom</a> grows among the fungi. The source of the small stream is projected by a metal grate on either end. The waterwheel connects to another room with filled with pipes.`,
+    roomDisc: `This room contains a massive waterwheel, constructed of metal and propelled by a small stream cutting through the center of the room. Mosses and fungi envelop most surfaces here. A <a id="pickUp" class="highlightMe">Strange Mushroom</a> grows among the fungi. The source of the small stream is projected by a metal grate on either end. The waterwheel connects to another room with filled with pipes.`,
     northRoom: 7,
     southRoom: 0,
     westRoom: 26,
@@ -489,8 +489,8 @@ const room33 = {
     roomDisc: "This t-intersection has a long carpet leading down it towards a bedroom. The carpet has shells and precious stones woven into the fringe. Markings are ",
     northRoom: 32,
     southRoom: 34,
-    westRoom: 35,
-    eastRoom: 0,
+    westRoom: 0,
+    eastRoom: 35,
     npc: 0,
     itemCheck: 0,
     visited: 1
@@ -501,7 +501,7 @@ const room34 = {
     roomName: "Sage's Quarters",
     roomNum: 34,
     roomSub: "Wisdom Incarnate...",
-    roomDisc: `A simple room, no decorations, just a simple mat in the middle of the room for sleeping. Atop the mat you notice a <a id="pickUp" href="#" class="highlightMe">broken sword</a>`,
+    roomDisc: `A simple room, no decorations, just a simple mat in the middle of the room for sleeping. Atop the mat you notice a <a id="pickUp" class="highlightMe">broken sword</a>`,
     northRoom: 33,
     southRoom: 0,
     westRoom: 0,
@@ -519,7 +519,7 @@ const room35 = {
     roomDisc: "This room is filled with old wooden shelves housing jars, scrolls, and all kinds of oddities. ",
     northRoom: 0,
     southRoom: 0,
-    westRoom: 333,
+    westRoom: 33,
     eastRoom: 0,
     npc: 0,
     itemCheck: 0,
@@ -588,7 +588,7 @@ const room40 = {
     roomName: "Darkened hallway",
     roomNum: 40,
     roomSub: "The shadow of hope...",
-    roomDisc: `This is the darkened hallway that exists outside of your old dungeon cell, there is an empty sconce where a <a id="pickUp" href="#" class="highlightMe">torch</a> once flickered, giving you hope of escape.`,
+    roomDisc: `This is the darkened hallway that exists outside of your old dungeon cell, there is an empty sconce where a <a id="pickUp" class="highlightMe">torch</a> once flickered, giving you hope of escape.`,
     northRoom: 0,
     southRoom: 1,
     westRoom: 3,
@@ -635,8 +635,8 @@ const optionDisc = [
     "a large room with moving parts making a ticking sound...",
     "a large chamber with a brass brazier in the middle...",
     "a wider passage with ceremonial markins on the walls",
-    "a room filled with shelves housing jars and scrolls...",
     "a bedroom with ceremonial markings on the walls...",
+    "a room filled with shelves housing jars and scrolls...",
     "daylight...",
     "darkness",
     "darkness",
@@ -841,7 +841,7 @@ function loadNPC(){
 
     if(npcList[roomList[currentRoom].npc].npcState == 0){
 
-        console.log("npc loaded, talk now");
+        //console.log("npc loaded, talk now");
 
         document.getElementById("speechOptions").style.display = "block";
 
@@ -892,7 +892,7 @@ function roomChange(direct){
     } else if(direct == "W" && roomList[currentRoom].westRoom !=0){
         currentRoom = roomList[currentRoom].westRoom;
     } else if(direct == "E" && roomList[currentRoom].eastRoom !=0){
-        console.log(roomList[currentRoom].eastRoom);
+        //console.log(roomList[currentRoom].eastRoom);
         currentRoom = roomList[currentRoom].eastRoom;
     }
     if(currentRoom != 0){
@@ -909,7 +909,7 @@ function roomChange(direct){
 //Then the following steps
 //Check if the room has an NPC, if yes then show the NPC block, otherwise don't
 function roomLoad(roomNumber){
-    console.log(roomNumber);
+    //console.log(roomNumber);
 
     if(roomNumber == 36){
         localStorage.setItem("Steps", steps);

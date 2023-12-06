@@ -106,11 +106,11 @@ function load(){
     let roomsVisited = localStorage.getItem("visitedRooms");
     roomsVisited = roomsVisited.replaceAll(',', '');
     
-    console.log(roomsVisited);
+    //console.log(roomsVisited);
 
-    for (let i = 1; i <= roomsVisited.length; i++) {
+    for (let i = 1; i < roomsVisited.length; i++) {
         if(roomsVisited[i] == 1){
-            console.log(`have not visisted room ${(i)}`);
+            //console.log(`have not visisted room ${(i)}`);
             listOfRooms[i].innerHTML = "...";
         }
     }

@@ -32,15 +32,18 @@
          </article>
          
          <div id="scorePart1">
-            <ul class="scoreList">
+            <div>
                <h2> Player Name: <span id="playerName">Name</span></h2>
-               <li><span id="name">Name</span> the <span id="occupation">Occupation</span></li>
-               <li><span id="age"></span> years old</li>
-               <li>Number of rooms walked through: <span id="steps">0</span></li>
-            </ul>
-            
                <ul class="scoreList">
-                  <h2>NPCs</h2>
+                  <li><span id="name">Name</span> the <span id="occupation">Occupation</span></li>
+                  <li><span id="age"></span> years old</li>
+                  <li>Number of rooms walked through: <span id="steps">0</span></li>
+               </ul>
+            </div>
+            <div>
+               <h2>NPCs</h2>
+               <ul class="scoreList">
+                  
                   <li>Warden Braunstone: <span class="highlightMe" id="npc1">Neutral</span></li>
 
                   <li>Immured Llewelyn: <span class="highlightMe" id="npc2">Neutral</span></li>
@@ -50,8 +53,8 @@
                   <li>Clandestine Geirleif: <span class="highlightMe" id="npc4">Neutral</span></li>
 
                   <li>Giant Sculptor: <span class="highlightMe" id="npc5">Neutral</span></li>
-
                </ul>
+            </div>
          </div>
                <section id="scoreContainer">
                   <img id="mapIMG" src="map00_33x72.png" alt="dungeon map">
