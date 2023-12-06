@@ -23,6 +23,20 @@ Map Image
 }
 
 
+#imgContainer figure img{
+    width: 100%;
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+figure{
+    margin: 25px;
+    padding: 15px;
+    border: 1px yellow dashed;
+}
+
 /*
 This is for everything referring to the Character Creation Form
 */
@@ -57,6 +71,10 @@ footer, header{
 #mainContainer{
     width: 80%;
     margin: 0px auto;
+}
+
+#imgContainer{
+    display: block;
 }
 
 
@@ -249,18 +267,41 @@ fieldset{
     text-align: left;
 }
 
+#concept{
+    width: 100%;
+}
+
 
 /*
 Everything inside the media query is for when the window's width is atleast 680px
 So anything bigger than 680px wide has the following styles applied to it
 */
-@media (min-width: 860px){
+@media (min-width: 900px){
 
     #mainContainer{
         width: 80%;
         margin: 0px auto;
     }
 
+
+    #imgContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    #imgContainer figure{
+        width: 45%;
+    }
+
+    #concept{
+        width: 100%;
+    }
+
+    #imgContainer figure img{
+        width: 100%;
+    }
 
 /*
 everything to do with the nav-bar #map
