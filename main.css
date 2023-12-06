@@ -305,7 +305,10 @@ So anything bigger than 900px wide has the following styles applied to it
 }
 
 #mapIMG{
-    width: 50%;
+    width: 660px;
+    height: 1200px;
+    height: auto;
+    margin: 5px;
 }
 #scorePart1{
     display: flex;
