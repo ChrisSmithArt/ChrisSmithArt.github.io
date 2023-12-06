@@ -396,7 +396,7 @@ const room27 = {
     roomName: "Ancient Relief",
     roomNum: 27,
     roomSub: "The story untold...",
-    roomDisc: "This room is barren, save for the massive relief; a two-dimensional sculpture coming out of the wall. A thick layer of dust covers the floor. The relief in question depicts...",
+    roomDisc: "This room is barren, save for the massive relief; a two-dimensional sculpture coming out of the wall. A thick layer of dust covers the floor. The relief in question depicts the emergence of somekind of being from within a lock surrounded by roots...",
     northRoom: 0,
     southRoom: 26,
     westRoom: 0,
